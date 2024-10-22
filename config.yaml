@@ -33,7 +33,7 @@ LLM_CACHE_DIR : 'llm_data/llm_models/huggingface'
 LLM_TEMPERATURE : 0
 
 # Path to save results
-SAVE_RESULTS_PATH : 'data/my_results'
+SAVE_RESULTS_PATH : 'data/assignment_results'
 
 # File paths for test questions
 MCQ_PATH : 'data/benchmark_data/mcq_questions.csv'
