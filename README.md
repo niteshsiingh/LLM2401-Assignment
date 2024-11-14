@@ -1,3 +1,38 @@
+## Instructions to Reproduce the Assignment
+
+1. **Set Up the Environment:**
+  - **Step 1:** Clone the repository.
+    ```sh
+    git clone https://github.com/niteshsiingh/LLM2401-Assignment.git
+    cd LLM2401-Assignment
+    ```
+  - **Step 2:** Create a virtual environment.
+    ```sh
+    conda create -n kg_rag python=3.10.12
+    conda activate kg_rag
+    ```
+  - **Step 3:** Install the required dependencies.
+    ```sh
+    pip install -r requirements.txt
+    ```
+  - **Step 4:** Run the setup script to create the disease vector database for KG-RAG.
+    ```sh
+    python3 -m kg_rag.run_setup
+    ```
+
+2. **Update Google API Key:**
+  - Add your Google API key in the `gpt_config.env` file.
+
+3. **Replicate KG-RAG with Gemini:**
+  - All the prior knowledge is commented, with their accuracies noted beside them. You can uncomment and proceed similarly.
+  - Adjust the mode number in `kg_rag/rag_based_generation/GPT/run_mcq_qa.py` as required.
+  - Execute the script `sh run_gemini.sh` to replicate KG-RAG using gemini-1.5-flash.
+
+4. **Evaluate the Model:**
+  - Change the model output path in `data/assignment_results/evaluate_gemini.py` and run the script to evaluate the model variants.
+  - Use the command `python3 -m data.assignment_results.evaluate_gemini` to evaluate the model.
+
+
 ## Instructions for the Assignment
 
 **1. Set up the environment following Steps 1-4 in the original README.**

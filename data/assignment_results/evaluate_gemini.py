@@ -2,7 +2,7 @@ import pandas as pd
 import json
 
 # Define file paths for the CSV files
-file_path1 = 'data/assignment_results/gemini_1.5_flash_kg_rag_based_mcq_0.csv'
+file_path1 = 'data/assignment_results/gemini_1.5_flash_kg_rag_based_mcq_3.csv'
 
 
 # Load the CSV files into DataFrames
